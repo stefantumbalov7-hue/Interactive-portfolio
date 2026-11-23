@@ -552,9 +552,9 @@
 
         // Начални 3 цели по подразбиране, ако няма нищо в localStorage
         const defaultGoals = [
-            { id: 1, text: "Усъвършенстване на умения за работа с GitHub", completed: false },
-            { id: 2, text: "Тренировки за подобряване на кода", completed: false },
-            { id: 3, text: "Създаване на ново репозитори и README файл", completed: false }
+            { id: 1, text: "Решаване на 5 задачи с масиви (map, filter, reduce)", completed: false },
+            { id: 2, text: "Извличане на данни с Fetch API от локален JSON файл", completed: false },
+            { id: 3, text: "Създаване на ново репозитори и пушване на първи commit", completed: false }
         ];
 
         // Зареждане на целите от localStorage или използване на началните
@@ -617,7 +617,7 @@
             // Създаване на нов обект цел
             const newGoal = {
                 id: Date.now(),
-                text: trimmedText, // Запазваме оригиналния текст за показване
+                text: trimmedText, 
                 completed: false
             };
 
